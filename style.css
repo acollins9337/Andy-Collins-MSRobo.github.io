@@ -16,8 +16,9 @@ body {
 .navbar-container {
     display: flex;
     align-items: center;
-    max-width: 900px;
-    margin: 0 auto; /* center horizontally */
+    justify-content: flex-start;
+    width: 100%;
+    margin: 0; /* center horizontally */
     padding: 0;  
     box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* shadow only around the box */
     border-radius: 8px;
@@ -31,12 +32,12 @@ body {
     padding: 10px 20px;
     border: 2px solid steelblue;
     border-bottom: none;            
-    border-radius: 8px 0 0 0;       /* top-left rounded */
+    border-radius: 8px 0 0 8px;
 }
 
 .nav-links {
     display: flex;
-    gap: 15px;
+    gap: 25px;
     margin-left: 20px;
     padding: 10px 20px;
 }
