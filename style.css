@@ -73,11 +73,11 @@ body {
 
 .link-tab {
     margin-left: auto;
+    display: flex;
+    align-items: center; 
 }
 
 .link-tab a {
-    display: flex;
-    align-items: center;
     justify-content: center;
     background-color: rgba(255,255,255,0.25);
     backdrop-filter: blur(6px);
@@ -94,8 +94,8 @@ body {
     box-shadow: 6px 6px 15px rgba(0,0,0,0.25);
 }
 
-/* LinkedIn icon */
-.icon {
+/* icon */
+.link-tab .icon {
     width: 32px;
     height: 32px;
     object-fit: contain;
