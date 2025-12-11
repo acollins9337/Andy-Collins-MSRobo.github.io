@@ -9,7 +9,9 @@ body {
 /* Navigation bar styling */
 .navbar {
     width: 100%;
-    background-color: steelblue;
+    background-image: url("nav_background.jpg");
+    background-size: cover;      /* image fills navbar */
+    background-position: center; /* keeps image centered */
     padding: 0;
     margin: 0;
     display: flex;
@@ -28,7 +30,6 @@ body {
     border-radius: 8px 8px 0 0;
     display: flex;
     align-items: center;
-    box-shadow: 6px 0 15px rgba(0,0,0,0.25);
 }
 
 .nav-links {
