@@ -12,7 +12,7 @@ body {
     background-image: url("nav_background.png");
     background-size: 120% auto;      /* image fills navbar */
     background-position: center; /* keeps image centered */
-    animation: bg-pan 15s linear infinite;
+    animation: bg-pan 30s linear infinite;
     padding: 0;
     margin: 0;
     display: flex;
@@ -22,7 +22,7 @@ body {
 
 @keyframes bg-pan {
     0%   { background-position: 50% 50%; }
-    50%  { background-position: 55% 48%; }  /* tiny drift */
+    50%  { background-position: 50% 35%; }  /* tiny drift */
     100% { background-position: 50% 50%; }
 }
 
