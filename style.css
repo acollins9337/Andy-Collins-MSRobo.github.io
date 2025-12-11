@@ -71,29 +71,36 @@ body {
     transform: scale(1.05);
 }
 
-.link-tab {
-    margin-left: auto;                  /* pushes it to the right */
-}
-
 .link-tab a {
-    background-color: rgba(255,255,255,0.25);  
-    backdrop-filter: blur(6px);      /* blends with page */
-    color: ghostwhite;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.5rem;
-    padding: 10px 20px;           
-    border-radius: 8px;
     display: flex;
     align-items: center;
-    transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+    justify-content: center;
+    background-color: rgba(255,255,255,0.25);
+    backdrop-filter: blur(6px);
+    border-radius: 8px;
+    padding: 8px 12px;
+    transition: transform 0.2s ease, background-color 0.2s ease,
+                box-shadow 0.2s ease;
+    text-decoration: none; /* ensures no underline */
 }
 
-.link-tab a:hover{
-    transform: scale(1.05);
+.link-tab a:hover {
     background-color: ghostwhite;
-    color: navy;
-    box-shadow: 8px 8px 15px rgba(0,0,0,0.25);
+    transform: scale(1.05);
+    box-shadow: 6px 6px 15px rgba(0,0,0,0.25);
+}
+
+/* LinkedIn icon */
+.linkedin-icon {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+    display: block;
+    transition: transform 0.2s ease;
+}
+
+.link-tab a:hover .linkedin-icon {
+    transform: scale(1.1);
 }
 
 .content {
