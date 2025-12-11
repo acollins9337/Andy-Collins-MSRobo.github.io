@@ -1,8 +1,9 @@
 body {
-    font-family: sans-serif;
-    max-width: 800px;
-    margin: 40px auto;
-    line-height: 1.6;
+    margin: 0;                     /* remove default page margin */
+    font-family: sans-serif;       /* default font */
+    background-color: whitesmoke;     /* main page background */
+    color: #333;                   /* default text color */
+    line-height: 1.6;              /* readable spacing */
 }
 
 /* Navigation bar styling */
@@ -26,13 +27,13 @@ body {
 
 .name-tab {
     background-color: whitesmoke;      /* blends with page */
-    color: steelblue;
+    color: #333;
     font-weight: bold;
     font-size: 1.2rem;
     padding: 10px 20px;
     border: 2px solid steelblue;
     border-bottom: none;            
-    border-radius: 8px 0 0 8px;
+    border-radius: 8px 8px 0 0;
 }
 
 .nav-links {
@@ -56,4 +57,14 @@ body {
     transform: scale(1.05);
     background-color: whitesmoke;
     color: steelblue;
+}
+
+.content {
+    width: 100%;
+    margin: 40px auto;
+    font-family: sans-serif;
+    line-height: 1.6;
+    background-color: whitesmoke;
+    padding: 20px;
+    border-radius: 8px;
 }
