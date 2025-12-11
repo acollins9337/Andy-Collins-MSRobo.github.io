@@ -69,6 +69,8 @@ body {
     background-color: ghostwhite;
     color: steelblue;
     transform: scale(1.05);
+    border-bottom: 4px solid ghostwhite;            
+    border-radius: 6px 6px 0 0;
 }
 
 .content {
