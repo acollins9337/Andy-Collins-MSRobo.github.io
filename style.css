@@ -10,8 +10,9 @@ body {
 .navbar {
     width: 100%;
     background-image: url("nav_background.png");
-    background-size: cover;      /* image fills navbar */
+    background-size: 120% auto;      /* image fills navbar */
     background-position: center; /* keeps image centered */
+    animation: bg-pan 15s linear infinite;
     padding: 0;
     margin: 0;
     display: flex;
@@ -19,11 +20,17 @@ body {
     justify-content: flex-start;
 }
 
+@keyframes bg-pan {
+    0%   { background-position: 50% 50%; }
+    50%  { background-position: 55% 48%; }  /* tiny drift */
+    100% { background-position: 50% 50%; }
+}
+
 .name-tab {
     background-color: ghostwhite;      /* blends with page */
     color: #333;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     padding: 10px 20px;
     border: none;
     border-bottom: 4px solid ghostwhite;            
@@ -43,9 +50,11 @@ body {
 .nav-links a {
     color: ghostwhite;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.25rem;
     padding: 8px 12px;
     border-radius: 6px;
+    background-color: rgba(255,255,255,0.15);  
+    backdrop-filter: blur(6px);
     transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
 }
 
