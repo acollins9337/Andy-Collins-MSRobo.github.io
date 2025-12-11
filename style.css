@@ -9,7 +9,7 @@ body {
 /* Navigation bar styling */
 .navbar {
     width: 100%;
-    background-image: url("nav_background.jpg");
+    background-image: url("nav_background.png");
     background-size: cover;      /* image fills navbar */
     background-position: center; /* keeps image centered */
     padding: 0;
