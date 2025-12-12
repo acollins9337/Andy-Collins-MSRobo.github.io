@@ -180,9 +180,10 @@ h3 {
     max-width: 90%;        /* visually balanced under the image */
 }
 
-.image-container .fig {
-    height: 128px;
-    width: 128px;
+.image-container img {
+    height: auto;
+    max-width: 100%;
+    display: block;
 }
 
 .split-text {
