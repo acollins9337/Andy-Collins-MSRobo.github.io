@@ -181,8 +181,8 @@ h3 {
 }
 
 .image-container .fig {
-    max-width: 100%;
-    height: auto;
+    height: 128px;
+    width: 128px;
 }
 
 .split-text {
