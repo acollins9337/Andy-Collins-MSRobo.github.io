@@ -1,8 +1,7 @@
 body {
     margin: 0;                     /* remove default page margin */
     font-family: "Inter", system-ui, sans-serif;       /* default font */
-    background-color: darkgrey;     /* main page background */
-    color: #333;                   /* default text color */
+    color: white;                   /* default text color */
     line-height: 1.6;
     width: 100%;
     background-image: url("nav_background.png");
@@ -13,7 +12,7 @@ body {
 
 h1, h2, h3 {
     font-family: "Poppins", sans-serif;
-    color: navy;
+    color: white;
     letter-spacing: 0.5px;    /* subtle modern spacing */
     margin-top: 30px;
     margin-bottom: 15px;
@@ -53,7 +52,7 @@ h3 {
 .name-tab {
     background-color: rgba(255,255,255,0.25);  
     backdrop-filter: blur(6px);
-    color: ghostwhite;
+    color: white;
     font-weight: bold;
     font-size: 2.0rem;
     padding: 10px 20px;
@@ -67,8 +66,8 @@ h3 {
 
 .name-tab:hover {
     transform: scale(1.05);
-    background-color: ghostwhite;
-    color: navy;
+    background-color: white;
+    color: black;
     box-shadow: 6px 6px 15px rgba(0,0,0,0.25);
 }
 
@@ -80,7 +79,7 @@ h3 {
 }
 
 .nav-links a {
-    color: ghostwhite;
+    color: white;
     text-decoration: none;
     font-size: 1.7rem;
     padding: 8px 12px;
@@ -92,14 +91,14 @@ h3 {
 
 .nav-links a:hover {
     transform: scale(1.05);
-    background-color: ghostwhite;
-    color: navy;
+    background-color: white;
+    color: black;
     box-shadow: 6px 6px 15px rgba(0,0,0,0.25);
 }
 
 .nav-links a.active {
-    background-color: ghostwhite;
-    color: navy;
+    background-color: white;
+    color: black;
     transform: scale(1.05);
 }
 
@@ -136,8 +135,8 @@ h3 {
 }
 
 .content {
-    background-color: dimgray;
-    box-shadow: 6px 6px 15px rgba(0,0,0,0.25);
+    background-color: black;
+    box-shadow: 0 0 15px black;
     border-radius: 16px;  
     width: 90%;
     margin: 20px auto;
@@ -148,6 +147,7 @@ h3 {
 
 .content .wide{
     width: 100%;
+    margin: 10px 10px
 }
 
 .split-row {
@@ -173,7 +173,7 @@ h3 {
 .split-figure .cap {
     margin-top: 8px;
     font-size: 0.9rem;
-    color: #555;
+    color: white;
     text-align: center;
     max-width: 90%;        /* visually balanced under the image */
 }
