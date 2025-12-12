@@ -37,7 +37,7 @@ h3 {
     background-size: 120% auto;      /* image fills navbar */
     background-position: center; /* keeps image centered */
     animation: bg-pan 30s linear infinite;
-    padding: 6px 0 0 0;
+    padding: 6px 6px 0 0;
     margin: 0;
     display: flex;
     align-items: center;
@@ -107,18 +107,12 @@ h3 {
 
 .link-tab a {
     justify-content: center;
-    background-color: rgba(255,255,255,0.25);
-    backdrop-filter: blur(6px);
-    border-radius: 8px;
-    padding: 8px 12px;
-    transition: transform 0.2s ease, background-color 0.2s ease,
-                box-shadow 0.2s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
     text-decoration: none; /* ensures no underline */
     display: flex;
 }
 
 .link-tab a:hover {
-    background-color: ghostwhite;
     transform: scale(1.05);
     box-shadow: 6px 6px 15px rgba(0,0,0,0.25);
 }
@@ -143,11 +137,14 @@ h3 {
     background-color: ghostwhite;
     justify-content: center;
     display: flex;
+    border-radius: 3px;
 }
 
 .wide .content{
     width: 85%;
     max-width: 1200px;
+    border-radius: 3px;
+    border-color: red;
 }
 
 .split-row {
