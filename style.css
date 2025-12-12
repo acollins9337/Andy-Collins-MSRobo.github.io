@@ -34,13 +34,17 @@ h3 {
 }
 
 /* Navigation bar styling */
-.navbar {
+.navbar-container {
     font-family: "Poppins", sans-serif;
     padding: 10px 0 0 0;
     margin: 0;
     display: flex;
     align-items: center;
     justify-content: flex-start;
+}
+
+.navbar {
+    width: 90%;
 }
 
 @keyframes bg-pan {
@@ -136,21 +140,21 @@ h3 {
 
 .content {
     background-color: black;
-    box-shadow: 0 0 15px black;
+    box-shadow: 0 0 25px black;
     border-radius: 16px;  
     width: 90%;
-    margin: 20px auto;
+    margin: 30px auto;
     line-height: 1.6;
     justify-content: center;
     display: flex;
 }
 
-.content .wide{
+.content .wide {
     width: 100%;
     margin: 10px 10px
 }
 
-.split-row {
+.content .split {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -160,17 +164,15 @@ h3 {
     max-width: 1200px;
 }
 
-.split-figure {
-    flex: 0 0 auto;         /* image keeps its natural or set width */
-}
-
-.split-figure img {
-    max-width: 100%;
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: auto;
     border-radius: 8px;
 }
 
-.split-figure .cap {
+.img-container .cap {
     margin-top: 8px;
     font-size: 0.9rem;
     color: white;
@@ -178,7 +180,12 @@ h3 {
     max-width: 90%;        /* visually balanced under the image */
 }
 
-.spit-figure-text {
+.image-container .fig {
+    max-width: 100%;
+    height: auto;
+}
+
+.split-text {
     flex: 1 1 auto;         /* text expands into remaining space */
     min-width: 200px;       /* optional for readability */
 }
