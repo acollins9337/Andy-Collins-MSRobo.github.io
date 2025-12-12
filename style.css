@@ -37,7 +37,7 @@ h3 {
     background-size: 120% auto;      /* image fills navbar */
     background-position: center; /* keeps image centered */
     animation: bg-pan 30s linear infinite;
-    padding: 0;
+    padding: 10px 0 0 0;
     margin: 0;
     display: flex;
     align-items: center;
@@ -137,13 +137,12 @@ h3 {
     background-color: ghostwhite;
     justify-content: center;
     display: flex;
-    border: 3px solid black;
+    border: 3px inset solid black;
 }
 
-.wide .content{
+.content .wide{
     width: 85%;
-    max-width: 1200px;
-    border: 3px solid red;
+    border: 3px inset solid red;
 }
 
 .split-row {
