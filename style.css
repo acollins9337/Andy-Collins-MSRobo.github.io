@@ -7,7 +7,7 @@ body {
     background-image: url("nav_background.png");
     background-size: 120% auto;      /* image fills navbar */
     background-position: center; /* keeps image centered */
-    animation: bg-pan 60s linear infinite;              /* readable spacing */
+    animation: bg-pan 40s linear infinite;              /* readable spacing */
 }
 
 h1, h2, h3 {
@@ -36,6 +36,8 @@ h3 {
 /* Navigation bar styling */
 .navbar-container {
     width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .navbar {
@@ -141,13 +143,15 @@ h3 {
 
 .content {
     background-color: black;
-    box-shadow: 0 0 25px black;
+    box-shadow: 0 0 40px black;
     border-radius: 16px;  
     width: 90%;
     margin: 30px auto;
     line-height: 1.6;
-    justify-content: center;
+
     display: flex;
+    flex-direction: column;   /* ← THIS forces rows */
+    align-items: center;      /* centers each row horizontally */
 }
 
 .content .wide {
@@ -166,7 +170,7 @@ h3 {
 }
 
 .img-container img {
-    max-width: 600px;
+    max-width: 450px;
     height: auto;
     display: block;
     border-radius: 8px;
