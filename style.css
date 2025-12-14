@@ -259,6 +259,7 @@ h3 {
 }
 
 .project-info {
+    position: absolute;
     left: 100%;
     width: 30%;
     padding: 40px;
