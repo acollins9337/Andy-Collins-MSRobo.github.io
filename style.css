@@ -207,38 +207,36 @@ h3 {
     width: 100%;
     margin-top: 20px;
     display: flex;
-    align-items: center;
+    justify-content: center; /* centers the card horizontally */
     overflow: visible;
-    justify-content: center;
 }
 
 .project-center {
-    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: center; /* centers content inside wrapper */
+    width: auto;             /* shrink to content */
 }
 
 .project-media {
-    position: relative;
     display: flex;
     align-items: stretch;
-    justify-content: center;
-    overflow: hidden;
-    width: 100%
-}
-
-.project-image {
+    justify-content: flex-start; /* align image left, description right */
+    width: auto;                 /* shrink to fit children */
+    max-width: 900px;
     position: relative;
-    transition: transform 0.6s ease;
-    width: 100%
 }
 
 .project-image-mask {
     position: relative;
-    max-width: 450px;
-    overflow: hidden;   /* clips number only */
+    width: 450px;      /* fixed image width */
+    overflow: hidden;  /* clips number only */
     z-index: 2;
     flex-shrink: 0;
+}
+
+.project-image {
+    width: 100%;
+    transition: transform 0.6s ease;
 }
 
 .project-image img {
@@ -259,30 +257,29 @@ h3 {
 }
 
 .project-info {
-    z-index: 1;
-    position: relative;
     width: 50%;
     padding: 40px;
-    transform: translateX(-75%);
-    transition: transform 0.6s ease, opacity 0.6s ease;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    opacity: 0.0;
+    transform: translateX(-75%);
+    opacity: 0;
+    transition: transform 0.6s ease, opacity 0.6s ease;
 }
 
+/* Hover effects */
 .project-card:hover .project-image {
     transform: translateX(-20%);
 }
 
 .project-card:hover .project-number {
-    transform: translateX(-150%);
+    transform: translateX(120%);
     opacity: 0;
 }
 
 .project-card:hover .project-info {
     transform: translateX(0);
-    opacity: 1.0;
+    opacity: 1;
 }
 
 @media (max-width: 768px) {
