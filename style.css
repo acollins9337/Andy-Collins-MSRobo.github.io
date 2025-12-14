@@ -223,7 +223,6 @@ h3 {
     display: flex;
     align-items: stretch;
     width: auto;            /* shrink to fit image + info */
-    max-width: 900px;       /* optional max width */
     position: relative;
     gap: 0;                 /* spacing between image & info handled by transforms */
     border: 2px solid greenyellow;
@@ -231,7 +230,7 @@ h3 {
 
 .project-image-mask {
     position: relative;
-    width: 400px;          /* fixed image width */
+    width: 30%;          /* fixed image width */
     z-index: 2;
     flex-shrink: 0;
 }
@@ -249,7 +248,6 @@ h3 {
 }
 
 .project-number {
-    position: absolute;
     bottom: 16px;
     left: 16px;
     font-size: 3rem;
@@ -260,14 +258,13 @@ h3 {
 }
 
 .project-info {
-    position: absolute;
     left: 100%;
-    width: 400px;
+    width: 30%;
     padding: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    transform: translateX(-75%);
+    transform: translateX(-100%);
     opacity: 0;
     transition: transform 0.6s ease, opacity 0.6s ease, width 0.6s ease;
     z-index: 1;
@@ -286,7 +283,7 @@ h3 {
 .project-card:hover .project-info {
     transform: translateX(0);     /* info slides out from behind image */
     opacity: 1;
-    width: 800px;
+    width: 60%;
 }
 
 @media (max-width: 768px) {
