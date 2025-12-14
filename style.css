@@ -261,8 +261,8 @@ h3 {
 .project-info {
     position: absolute;
     left: 100%;
-    transform: translateX(-100%);
-    width: 800px;
+    transform: translateX(-65%);
+    width: 150%;
     padding: 40px;
     display: flex;
     flex-direction: column;
@@ -275,7 +275,7 @@ h3 {
 
 /* Hover Effects */
 .project-card:hover .project-image {
-    transform: translateX(-400px); /* image slides left */
+    transform: translateX(-100%); /* image slides left */
 }
 
 .project-card:hover .project-number {
@@ -284,7 +284,7 @@ h3 {
 }
 
 .project-card:hover .project-info {
-    transform: translateX(-50%);     /* info slides out from behind image */
+    transform: translateX(-33%);     /* info slides out from behind image */
     opacity: 1;
     width: 800px;
 }
