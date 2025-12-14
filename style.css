@@ -260,8 +260,9 @@ h3 {
 
 .project-info {
     position: absolute;
-    left: 0%;
-    width: 400px;
+    left: 100%;
+    transform: translateX(-100%);
+    width: 800px;
     padding: 40px;
     display: flex;
     flex-direction: column;
@@ -283,7 +284,7 @@ h3 {
 }
 
 .project-card:hover .project-info {
-    transform: translateX(0px);     /* info slides out from behind image */
+    transform: translateX(-50%);     /* info slides out from behind image */
     opacity: 1;
     width: 800px;
 }
