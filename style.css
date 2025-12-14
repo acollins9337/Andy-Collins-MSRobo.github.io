@@ -153,6 +153,7 @@ h3 {
     display: flex;
     flex-direction: column;   /* ← THIS forces rows */
     align-items: center;      /* centers each row horizontally */
+    justify-content: center;
 }
 
 .content .wide {
