@@ -208,6 +208,7 @@ h3 {
     display: flex;
     align-items: center;
     overflow: visible;
+    justify-content: center;
 }
 
 .project-center {
@@ -220,6 +221,7 @@ h3 {
     position: relative;
     display: flex;
     align-items: stretch;
+    justify-content: center;
     overflow: hidden;
     width: 100%
 }
