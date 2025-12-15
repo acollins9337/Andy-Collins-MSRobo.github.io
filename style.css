@@ -13,9 +13,9 @@ body::before {
     content: "";
     position: fixed;
     inset: 0;
-    background-image: url("nav_bg_tile.png");
+    background-image: url("nav_bg_2.png");
     background-repeat: repeat-y;
-    background-size: cover;
+    background-size: contain;
     background-position: 0 0;
     animation: bg-pan 20s linear infinite;
     z-index: -1;
