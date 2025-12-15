@@ -15,7 +15,7 @@ body::before {
     inset: 0;
     background-image: url("nav_bg_2.png");
     background-repeat: repeat-y;
-    background-size: contain;
+    background-size: 100% auto;
     background-position: 0 0;
     animation: bg-pan 20s linear infinite;
     z-index: -1;
@@ -27,7 +27,7 @@ body::before {
         background-position-y: 0;
     }
     to {
-        background-position-y: 100%;
+        background-position-y: -2448px;
     }
 }
 
