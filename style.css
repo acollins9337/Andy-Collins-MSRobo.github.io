@@ -13,22 +13,19 @@ body::before {
     content: "";
     position: fixed;
     inset: 0;
-    background-image: url("nav_bg_2.png");
+    background-image: url("web_bg.png");
     background-repeat: repeat-y;
     background-size: 100% auto;
     background-position: 0 0;
-    animation: bg-pan 20s linear infinite;
+    animation: bg-pan 60s linear infinite;
     z-index: -1;
 }
 
 /* seamless vertical loop */
 @keyframes bg-pan {
-    from {
-        background-position-y: 0;
-    }
-    to {
-        background-position-y: -2448px;
-    }
+  0%   { background-position-y: 25%; }
+  50%  { background-position-y: 75%; }
+  100% { background-position-y: 25%; }
 }
 
 h1, h2, h3 {
