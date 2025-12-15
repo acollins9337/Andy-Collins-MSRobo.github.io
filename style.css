@@ -5,7 +5,7 @@ body {
     line-height: 1.6;
     font-size: 1.25rem;
     overflow-x: hidden;
-    background-color: #030718; /* fallback */
+    background-color: #040920; /* fallback */
 }
 
 /* animated background layer */
@@ -13,7 +13,7 @@ body::before {
     content: "";
     position: fixed;
     inset: 0;
-    background-image: url("nav_bg_2.png");
+    background-image: url("nav_bg_tile.png");
     background-repeat: repeat-y;
     background-size: 100% auto;
     background-position: 0 0;
@@ -157,8 +157,8 @@ h3 {
 }
 
 .content {
-    background-color: #030718;
-    box-shadow: 0 -15px 30px #030718;
+    background-color: #040920;
+    box-shadow: 0 -15px 30px #040920;
     border-radius: 16px;  
     width: 90%;
     margin: 30px auto;
