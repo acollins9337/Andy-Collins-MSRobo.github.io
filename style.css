@@ -177,6 +177,8 @@ h3 {
     border-radius: 16px;  
     width: 90%;
     margin: 30px auto;
+    padding-bottom: 30px;
+    padding-top: 20px;
     line-height: 1.6;
 
     display: flex;
