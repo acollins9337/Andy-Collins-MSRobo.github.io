@@ -17,7 +17,7 @@ body::before {
     background-repeat: repeat-y;
     background-size: 100% auto;
     background-position: 0 0;
-    animation: bg-pan 60s linear infinite;
+    animation: bg-pan 50s linear infinite;
     z-index: -1;
 }
 
