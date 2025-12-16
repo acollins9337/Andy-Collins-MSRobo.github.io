@@ -186,9 +186,8 @@ h3 {
 }
 
 .content .wide {
-    margin: 25px auto;
+    margin: 15px auto;
     width: 90%;
-    border: 2px solid greenyellow;
 }
 
 .content .wide:hover h1{
@@ -204,8 +203,7 @@ h3 {
     display: flex;
     justify-content: flex-start;
     gap: 40px;              /* spacing between halves */
-    margin: 40px 30px;
-    border: 2px solid red;
+    margin: 15px 30px;
 }
 
 .content .split:hover h1{
