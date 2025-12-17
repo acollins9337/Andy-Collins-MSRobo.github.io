@@ -187,15 +187,23 @@ h3 {
     justify-content: center;
 }
 
+.fontbox
+{
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.fontbox:hover h1::after, 
+.fontbox:hover h2::after{
+    width: 100%;
+}
+
 .content .wide {
     margin: 15px auto;
     width: 90%;
 }
 
-.content .wide:hover h1::after, 
-.content .wide:hover h2::after{
-    width: 100%;
-}
 
 .content .split {
     width: 90%;
@@ -204,11 +212,6 @@ h3 {
     gap: 40px;              /* spacing between halves */
     margin: 15px 30px;
     align-items: center;
-}
-
-.content .split:hover h1::after, 
-.content .split:hover h2::after{
-    width: 100%
 }
 
 .img-container {
