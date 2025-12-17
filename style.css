@@ -34,7 +34,7 @@ h1, h2, h3 {
     letter-spacing: 0.5px;    /* subtle modern spacing */
     margin-top: 30px;
     margin-bottom: 15px;
-    display: inline-block;
+    display: block;
     position: relative;
 }
 
@@ -191,7 +191,6 @@ h3 {
 {
     width: 100%;
     height: auto;
-    border: 2px solid yellow;
 }
 
 .fontbox:hover h1::after, 
@@ -202,7 +201,6 @@ h3 {
 .content .wide {
     margin: 15px auto;
     width: 90%;
-    border: 2px solid red;
 }
 
 
