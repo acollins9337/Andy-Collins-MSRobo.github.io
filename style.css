@@ -288,10 +288,12 @@ h3 {
     width: 100%;
     position: relative;    /* needed for number positioning */
     display: none;
+    border-radius: 12px;
 }
 
 .project-image.active{
     display: block;
+    border-radius: 12px;
 }
 
 .project-image img {
