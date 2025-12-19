@@ -308,7 +308,8 @@ h3 {
     left: 16px;
     font-size: 1.25rem;
     font-weight: 700;
-    color: white;
+    font-style: italic;
+    color: black;
     opacity: 0.9;
     transition: transform 0.6s ease, opacity 0.6s ease;
 }
