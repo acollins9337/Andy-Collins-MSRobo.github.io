@@ -482,6 +482,7 @@ h3 {
 
     .project-card {
         overflow: hidden;
+        display: flex;
     }
 
     .project-media {
@@ -504,6 +505,13 @@ h3 {
         padding: 10px 0 0 0;
         text-align: center;
         display: block;
+    }
+
+    .project-card,
+    .project-media,
+    .project-image-mask {
+        height: auto !important;
+        min-height: 0 !important;
     }
 
     /* Kill hover-only transitions */
